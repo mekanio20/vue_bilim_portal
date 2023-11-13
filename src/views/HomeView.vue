@@ -3,7 +3,7 @@
 	<Sidebar />
 	<LeftSidebar />
 	<RightSidebar />
-    <div class="main-container">
+    <div v-if="_isAuthenticated" class="main-container">
 			<div class="xs-pd-20-10 pd-ltr-20">
 				<div class="title pb-20">
 					<h2 class="h3 mb-0">TDBGI gorkezmeler</h2>
@@ -570,7 +570,9 @@
 	import Sidebar from '../components/Sidebar.vue'
 	import LeftSidebar from '../components/LeftSidebar.vue'
 	import RightSidebar from '../components/RightSidebar.vue'
+	import { mapGetters } from 'vuex'
     export default {
+		name: "Home",
 		components: {
 			Header,
 			Sidebar,
@@ -584,7 +586,10 @@
         },
         methods: {
 
-        }
+        },
+		computed: {
+			...mapGetters(["_isAuthenticated"])
+		}
     }
 </script>
 

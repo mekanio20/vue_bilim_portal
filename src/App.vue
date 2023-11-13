@@ -4,6 +4,12 @@
   </div>
 </template>
 
-<script setup>
-  import { RouterView, RouterLink } from 'vue-router'
+<script>
+  import { RouterView } from 'vue-router'
+  export default {
+    name: "App",
+    components: {
+      RouterView
+    }
+  }
 </script>

@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-			rel="stylesheet"
-		/>
+    <link href="/vendors/styles/bootstrap5.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Vite App</title>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-    <script src="/js/gtag.js"></script>
-    <script src="/js/core.js"></script>
-    <script src="/js/process.js"></script>
-    <script src="/js/dashboard.js"></script>
-    <script src="/js/script.min.js"></script>
-    <script src="/js/apexcharts.min.js"></script>
-    <script src="/js/layout-settings.js"></script>
-    <script src="/js/jquery.dataTables.min.js"></script>
-    <script src="/js/dataTables.bootstrap4.min.js"></script>
-    <script src="/js/dataTables.responsive.min.js"></script>
-    <script src="/js/responsive.bootstrap4.min.js"></script>
-    <script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"
-		></script>
+
+    <script src="/vendors/scripts/core.js"></script>
+		<script src="/vendors/scripts/script.min.js"></script>
+		<script src="/vendors/scripts/process.js"></script>
+		<script src="/vendors/scripts/layout-settings.js"></script>
+		<script src="/src/plugins/apexcharts/apexcharts.min.js"></script>
+		<script src="/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+		<script src="/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+		<script src="/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+    <script src="/vendors/scripts/datatable-setting.js"></script>
+		<script src="/vendors/scripts/dashboard3.js"></script>
+
+    <script src="/src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+		<script src="/src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+		<script src="/src/plugins/datatables/js/buttons.print.min.js"></script>
+		<script src="/src/plugins/datatables/js/buttons.html5.min.js"></script>
+		<script src="/src/plugins/datatables/js/buttons.flash.min.js"></script>
+		<script src="/src/plugins/datatables/js/pdfmake.min.js"></script>
+		<script src="/src/plugins/datatables/js/vfs_fonts.js"></script>
+    <!-- switchery js -->
+		<script src="/src/plugins/switchery/switchery.min.js"></script>
+    <!-- bootstrap-tagsinput js -->
+		<script src="src/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+    <!-- bootstrap-touchspin js -->
+		<script src="/src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+		<script src="/vendors/scripts/advanced-components.js"></script>
+    <script src="/src/scripts/gtag.js"></script>
+    <script src="/src/scripts/adsbygoogle.js"></script>
+
     <script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
@@ -49,5 +61,13 @@
 				f.parentNode.insertBefore(j, f);
 			})(window, document, "script", "dataLayer", "GTM-NXZMQSS");
 		</script>
+    <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
   </body>
 </html>

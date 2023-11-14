@@ -7,35 +7,40 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: () => import('../views/HomeView.vue')
     },
     {
       path: '/faculty',
-      name: 'faculty',
+      name: 'Faculty',
       component: () => import('../views/FacultyView.vue')
     },
     {
       path: '/students',
-      name: 'students',
+      name: 'Student',
       component: () => import('../views/StudentsView.vue')
     },
     {
       path: '/login',
-      name: 'login',
+      name: 'Login',
       component: () => import('../views/LoginView.vue')
+    },
+    {
+      path: '/student/detail',
+      name: 'StudentDetail',
+      component: () => import('../views/StudentDetail.vue')
     }
   ]
 })
 
-router.beforeEach((to, from, next) => {
-  const authNotRequiredRoutes = ["Login", "Register"]
-  const _isAuthenticated = store.getters._isAuthenticated
-  if (authNotRequiredRoutes.indexOf(to.name) > -1 && _isAuthenticated) {
-    next(false)
-  } else {
-    next()
-  }
-})
+// router.beforeEach((to, from, next) => {
+//   const authNotRequiredRoutes = ["Login", "Register"]
+//   const _isAuthenticated = store.getters._isAuthenticated
+//   if (authNotRequiredRoutes.indexOf(to.name) > -1 && _isAuthenticated) {
+//     next(false)
+//   } else {
+//     next()
+//   }
+// })
 
 export default router

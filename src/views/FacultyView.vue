@@ -367,6 +367,7 @@
 	import LeftSidebar from '../components/LeftSidebar.vue'
 	import RightSidebar from '../components/RightSidebar.vue'
     export default {
+		name: "Faculty",
 		components: {
 			Header,
 			Sidebar,

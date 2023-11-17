@@ -25,7 +25,7 @@
 						</tr>
 					</thead>
 					<tbody>
-                        <TableRow v-for="item in resp" :key="item.id" :name="item.ders"/>
+                        <TableRowDers v-for="item in resp" :key="item.id" :name="item.ders"/>
 					</tbody>
 				</table>
 			</div>
@@ -40,7 +40,7 @@ import LeftSidebar from '../components/LeftSidebar.vue'
 import RightSidebar from '../components/RightSidebar.vue'
 import Select from '../components/Select.vue'
 import Profile from '../components/Profile.vue'
-import TableRow from '../components/layouts/TableRow.vue'
+import TableRowDers from '../components/layouts/TableRowDers.vue'
 import StatisticBox from '../components/layouts/StatisticBox.vue'
 export default {
     name: "StudentDetail",
@@ -51,7 +51,7 @@ export default {
 	    RightSidebar,
 	    Select,
         Profile,
-        TableRow,
+        TableRowDers,
         StatisticBox
     },
     data() {

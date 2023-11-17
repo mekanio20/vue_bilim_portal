@@ -28,7 +28,7 @@
 
 <script>
     export default {
-        name: "TableRow",
+        name: "TableRowDers",
         props: {
             name: {
                 type: String,

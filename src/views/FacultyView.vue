@@ -5,76 +5,12 @@
 	<RightSidebar />
     <div class="main-container">
 			<div class="pd-ltr-20">
-				<div class="card-box pd-20 height-100-p mb-30">
-					<div class="row align-items-center">
-						<div class="col-md-4">
-							<img src="../assets/images/banner-img.png" alt="" />
-						</div>
-						<div class="col-md-8">
-							<h4 class="font-20 weight-500 mb-10 text-capitalize">
-								Hosh geldiniz!
-								<div class="weight-600 font-30 text-blue">"Dekanyn ady"!</div>
-							</h4>
-							<p class="font-18 max-width-600">
-								Kompyuter tehnologiyasy we awtomatika fakultetinin
-								dekany
-							</p>
-						</div>
-					</div>
-				</div>
+				<Profile :image="this.image" :fullname="this.fullname" :desc="this.desc"/>
 				<div class="row">
-					<div class="col-xl-3 mb-30">
-						<div class="card-box height-100-p widget-style1">
-							<div class="d-flex flex-wrap align-items-center">
-								<div class="progress-data">
-									<div id="chart"></div>
-								</div>
-								<div class="widget-data">
-									<div class="h4 mb-0">21</div>
-									<div class="weight-600 font-14">Dekanat</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 mb-30">
-						<div class="card-box height-100-p widget-style1">
-							<div class="d-flex flex-wrap align-items-center">
-								<div class="progress-data">
-									<div id="chart2"></div>
-								</div>
-								<div class="widget-data">
-									<div class="h4 mb-0">314</div>
-									<div class="weight-600 font-14">Talyplar</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 mb-30">
-						<div class="card-box height-100-p widget-style1">
-							<div class="d-flex flex-wrap align-items-center">
-								<div class="progress-data">
-									<div id="chart3"></div>
-								</div>
-								<div class="widget-data">
-									<div class="h4 mb-0">45</div>
-									<div class="weight-600 font-14">Toparlar</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 mb-30">
-						<div class="card-box height-100-p widget-style1">
-							<div class="d-flex flex-wrap align-items-center">
-								<div class="progress-data">
-									<div id="chart4"></div>
-								</div>
-								<div class="widget-data">
-									<div class="h4 mb-0">450</div>
-									<div class="weight-600 font-14">Bahalandyrma</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<StatisticBox :name="this.dekanat" />
+					<StatisticBox :name="this.talyplar" />
+					<StatisticBox :name="this.toparlar" />
+					<StatisticBox :name="this.bahalandyrma" />
 				</div>
 				<div class="row" style="justify-content: center;">
 					<div class="col-xl-8 mb-30">
@@ -98,262 +34,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td><a href="#">hunar</a></td>
-								<td><a href="#">MTPU</a></td>
-								<td><a href="#">2021</a></td>
-								<td><a href="#">Gylyjowa. M</a></td>
-								<td>
-									<div class="dropdown">
-										<a
-											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-											href="#"
-											role="button"	
-											data-toggle="dropdown"
-										>
-											<i class="dw dw-more"></i>
-										</a>
-										<div
-											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-										>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-eye"></i> View</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-edit2"></i> Edit</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-delete-3"></i> Delete</a
-											>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">1</th>
-								<td><a href="#">hunar</a></td>
-								<td><a href="#">MTPU</a></td>
-								<td><a href="#">2021</a></td>
-								<td><a href="#">Gylyjowa. M</a></td>
-								<td>
-									<div class="dropdown">
-										<a
-											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-											href="#"
-											role="button"
-											data-toggle="dropdown"
-										>
-											<i class="dw dw-more"></i>
-										</a>
-										<div
-											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-										>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-eye"></i> View</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-edit2"></i> Edit</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-delete-3"></i> Delete</a
-											>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">1</th>
-								<td><a href="#">hunar</a></td>
-								<td><a href="#">MTPU</a></td>
-								<td><a href="#">2021</a></td>
-								<td><a href="#">Gylyjowa. M</a></td>
-								<td>
-									<div class="dropdown">
-										<a
-											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-											href="#"
-											role="button"
-											data-toggle="dropdown"
-										>
-											<i class="dw dw-more"></i>
-										</a>
-										<div
-											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-										>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-eye"></i> View</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-edit2"></i> Edit</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-delete-3"></i> Delete</a
-											>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">1</th>
-								<td><a href="#">hunar</a></td>
-								<td><a href="#">MTPU</a></td>
-								<td><a href="#">2021</a></td>
-								<td><a href="#">Gylyjowa. M</a></td>
-								<td>
-									<div class="dropdown">
-										<a
-											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-											href="#"
-											role="button"
-											data-toggle="dropdown"
-										>
-											<i class="dw dw-more"></i>
-										</a>
-										<div
-											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-										>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-eye"></i> View</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-edit2"></i> Edit</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-delete-3"></i> Delete</a
-											>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">1</th>
-								<td><a href="#">hunar</a></td>
-								<td><a href="#">MTPU</a></td>
-								<td><a href="#">2021</a></td>
-								<td><a href="#">Gylyjowa. M</a></td>
-								<td>
-									<div class="dropdown">
-										<a
-											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-											href="#"
-											role="button"
-											data-toggle="dropdown"
-										>
-											<i class="dw dw-more"></i>
-										</a>
-										<div
-											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-										>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-eye"></i> View</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-edit2"></i> Edit</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-delete-3"></i> Delete</a
-											>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">1</th>
-								<td><a href="#">hunar</a></td>
-								<td><a href="#">MTPU</a></td>
-								<td><a href="#">2021</a></td>
-								<td><a href="#">Gylyjowa. M</a></td>
-								<td>
-									<div class="dropdown">
-										<a
-											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-											href="#"
-											role="button"
-											data-toggle="dropdown"
-										>
-											<i class="dw dw-more"></i>
-										</a>
-										<div
-											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-										>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-eye"></i> View</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-edit2"></i> Edit</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-delete-3"></i> Delete</a
-											>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">1</th>
-								<td><a href="#">hunar</a></td>
-								<td><a href="#">MTPU</a></td>
-								<td><a href="#">2021</a></td>
-								<td><a href="#">Gylyjowa. M</a></td>
-								<td>
-									<div class="dropdown">
-										<a
-											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-											href="#"
-											role="button"
-											data-toggle="dropdown"
-										>
-											<i class="dw dw-more"></i>
-										</a>
-										<div
-											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-										>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-eye"></i> View</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-edit2"></i> Edit</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-delete-3"></i> Delete</a
-											>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">1</th>
-								<td><a href="#">hunar</a></td>
-								<td><a href="#">MTPU</a></td>
-								<td><a href="#">2021</a></td>
-								<td><a href="#">Gylyjowa. M</a></td>
-								<td>
-									<div class="dropdown">
-										<a
-											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-											href="#"
-											role="button"
-											data-toggle="dropdown"
-										>
-											<i class="dw dw-more"></i>
-										</a>
-										<div
-											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-										>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-eye"></i> View</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-edit2"></i> Edit</a
-											>
-											<a class="dropdown-item" href="#"
-												><i class="dw dw-delete-3"></i> Delete</a
-											>
-										</div>
-									</div>
-								</td>
-							</tr>
+							<TableRowTopar v-for="item in topar" :id="item.id" :hunar="item.hunar" :ugur="item.ugur" :year="item.year" :kurator="item.kurator" />
 						</tbody>
 					</table>
 				</div>
@@ -366,17 +47,40 @@
 	import Sidebar from '../components/Sidebar.vue'
 	import LeftSidebar from '../components/LeftSidebar.vue'
 	import RightSidebar from '../components/RightSidebar.vue'
+	import Profile from '../components/Profile.vue'
+	import TableRowTopar from '../components/layouts/TableRowTopar.vue'
+	import StatisticBox from '../components/layouts/StatisticBox.vue'
     export default {
 		name: "Faculty",
 		components: {
 			Header,
 			Sidebar,
 			LeftSidebar,
-			RightSidebar
+			RightSidebar,
+			Profile,
+			TableRowTopar,
+			StatisticBox
 		},
         data() {
             return {
-
+				fullname: '"Dekanyn ady"!',
+				desc: 'Kompyuter tehnologiyasy we awtomatika fakultetinin dekany',
+				topar: [
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' },
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' },
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' },
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' },
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' },
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' },
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' },
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' },
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' },
+					{ id: 1, hunar: 'hunar', ugur: 'MTPU', year: '2003', kurator: 'Gylyjowa. M' }
+				],
+				dekanat: 'Dekanat',
+				talyplar: 'Talyplar',
+				toparlar: 'Toparlar',
+				bahalandyrma: 'Bahalandyrma'
             }
         },
         methods: {

@@ -6,12 +6,12 @@
     <div class="main-container">
 		<div class="pd-ltr-20">
 			<!-- /vendors/images/banner-img.png -->
-            <Profile :fullname="this.fullname" :desc="this.desc"/>
+            <Profile :image="this.image" :fullname="this.fullname" :desc="this.desc"/>
 			<div class="row">
 				<StatisticBox v-for="item in box" :key="item.id" :name="item.name"/>
 			</div>
 			<div class="card-box mb-30">
-				<h2 class="h4 pd-20">Best Selling Products</h2>
+				<h2 class="h4 pd-20">Respisaniya</h2>
 				<table class="data-table table nowrap">
 					<thead>
 						<tr>
@@ -69,12 +69,9 @@ export default {
             ],
 			fullname: 'Plany Planyyew Planyyewic',
 			desc: 'Lorem ipsum dolar sit amet...',
-			image: null
+			image: '/vendors/images/banner-img.png'
         }
-    },
-	created() {
-		this.image = $image('/vendors/images/banner-img.png')
-	}
+    }
 }
 </script>
 

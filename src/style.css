@@ -15,6 +15,10 @@ img {
     object-fit: cover;
 }
 
+a {
+    color: #1b00ff;
+}
+
 body {
     background-color: #ecf0f4;
 }

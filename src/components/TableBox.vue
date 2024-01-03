@@ -1,14 +1,14 @@
 <template>
     <div class="main__box">
         <div class="box__left">
-            <div class="box__title">Students</div>
+            <div class="box__title">{{ title }}</div>
             <div class="box__links">
                 <a href="/">Home</a>
                 <span>></span>
-                <a href="/students">Students</a>
+                <a :href="link">{{ title }}</a>
             </div>
         </div>
-        <div class="box__right">January 2023</div>
+        <div class="box__right">{{ date }}</div>
     </div>
 </template>
 
@@ -21,6 +21,14 @@ export default {
             default: false
         },
         title: {
+            type: String,
+            default: ''
+        },
+        link: {
+            type: String,
+            default: ''
+        },
+        date: {
             type: String,
             default: ''
         }

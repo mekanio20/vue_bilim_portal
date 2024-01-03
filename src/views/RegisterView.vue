@@ -1,9 +1,9 @@
 <template>
     <div class="wrapper">
         <div class="container">
-            <img class="login__img" src="../assets/img/login-page-img.png">
+            <img class="login__img" src="../assets/img/register-page-img.png">
             <div class="login">
-                <div class="login__title">Login To Portal</div>
+                <div class="login__title">Register To Portal</div>
                 <div class="login__role">
                     <div class="role">
                         <div class="role__icon">
@@ -24,22 +24,22 @@
                 </div>
                 <div class="login__input">
                     <input class="input" type="text" placeholder="Ulanyjy ady">
-                    <input class="input" type="password" placeholder="********">
+                    <input class="input" type="password" placeholder="Paroly">
+                    <input class="input" type="text" placeholder="Doly ady">
+                    <input class="input" type="text" placeholder="+993">
                 </div>
                 <div class="login__button">
-                    <button class="login__sumbit" type="submit">Sign in</button>
-                    <p style="color: rgb(112, 115, 115)">OR</p>
-                    <a class="login__register" href="/register">Register to Create Account</a>
+                    <a class="login__sumbit" href="/">Register</a>
                 </div>
             </div>
-        </div>
+       </div>
     </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
 export default {
-    name: "Login",
+    name: "Register",
     components: {
         Header
     }

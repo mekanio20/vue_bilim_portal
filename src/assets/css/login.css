@@ -1,0 +1,120 @@
+.container {
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.login__img {
+    width: 80%;
+    height: 100vh;
+}
+
+.login {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.login__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1b00ff;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+
+.login__role {
+    display: flex;
+    align-items: center;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+    margin: 20px 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.role__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.role__name {
+    padding: 10px;
+}
+
+.login__input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input {
+    width: 350px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    outline: none;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+}
+
+.login__button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login__sumbit {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 350px;
+    padding: 15px 20px;
+    background-color: #1b00ff;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    transition: 0.4s ease;
+}
+
+.login__register {
+    border: 1px solid #1b00ff;
+    color: #1b00ff;
+    outline: none;
+    width: 350px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.login__sumbit:hover {
+    background-color: #0d0081;
+}
+
+.login__register:hover {
+    background-color: #1b00ff;
+    color: #fff;
+}

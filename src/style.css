@@ -1,0 +1,417 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    background-color: #ecf0f4;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+/* Header -> Burger */
+
+.header__burger {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: #555;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -8px) rotate(45deg);
+}
+
+/* Header -> Search */
+
+.header__input {
+    outline: none;
+    border: 1px solid #d4d4d4;
+    color: #131e22;
+    font-weight: 400;
+    font-size: 15px;
+    width: 430px;
+    height: 45px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.header__input:focus {
+    border: 1px solid #1b00ff;
+}
+
+/* Header -> Profile */
+
+.header__image {
+    width: 55px;
+    height: 55px;
+}
+
+.header__fullname {
+    font-weight: 500;
+    margin-left: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #131e22;
+}
+
+.profile__image {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .18);
+    border-radius: 50%;
+}
+
+/* Main */
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__statistic {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    height: 230px;
+    padding: 30px 20px;
+    flex-direction: column;
+}
+
+.main__title {
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+/* Main -> Cards */
+
+.main__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.card {
+    width: 25%;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__left {
+    flex: 3;
+    padding: 0 20px;
+}
+
+.card__number {
+    opacity: 0.8;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card__title {
+    padding: 10px 0;
+    opacity: 0.6;
+}
+
+.card__right {
+    flex: 1;
+    height: 100%;
+    background-color: #334148;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Main Faculty */
+
+.main__faculty {}
+
+/* Main Department */
+
+.main__department {
+    width: 80%;
+    display: flex;
+    margin: 0 auto 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.department__box {
+    border-radius: 10px;
+    margin: 0 25px;
+    padding: 20px;
+    width: 340px;
+    height: auto;
+    background-color: #fff;
+}
+
+/* Department -> Header */
+
+.department__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.department__title {
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.department__button {
+    font-size: 20px;
+}
+
+/* Department -> Body */
+
+.department__body {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.department__item {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item__id {
+    font-weight: bold;
+}
+
+.item__title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item__rating {
+    font-size: 10px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.item__faculty {
+    padding-top: 10px;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.item__link {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #1b00ff;
+    color: #1b00ff;
+}
+
+.item__link:hover {
+    background-color: #1b00ff;
+    color: #fff;
+}
+
+/* Main Table */
+
+.main__table {
+    /* width: 1000px; */
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    background-color: #fff;
+}
+
+.table__title {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table__main {
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, thead, tbody, tr {
+    border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:last-child {
+    border-bottom: 2px solid #ffffff;
+}
+
+tr th, tr, td {
+    padding: 20px 30px;
+}
+
+td {
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.delete {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.table__pagination {
+    width: 100%;
+    height: 50px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pagination {
+    float: right;
+    display: flex;
+    width: fit-content;
+    padding: 0px 15px;
+    border-radius: 4px;
+    align-items: center;
+    border: 1px solid #dee2e6;
+}
+
+.page__number {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.page__cursor {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.page__number:hover, .page__cursor:hover {
+    background-color: #6052d7;
+    color: #fff;
+}
+
+/* Main box */
+
+.main__box {
+    width: 90%;
+    height: 100px;
+    margin: 20px auto 0;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.box__left {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box__title {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.box__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+
+.box__right {
+    color: #fff;
+    background-color: #1b00ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

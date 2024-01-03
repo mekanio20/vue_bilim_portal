@@ -1,36 +1,34 @@
 <template>
-    <div class="card-box pd-20 height-100-p mb-30">
-        <div class="row align-items-center">
-            <div class="col-md-4">
-                <img src="image" alt="image" />
-            </div>
-            <div class="col-md-8">
-                <h4 class="font-20 weight-500 mb-10 text-capitalize">
-                    Hosh geldiniz!
-                    <div class="weight-600 font-30 text-blue">{{ fullname }}</div>
-                </h4>
-                <p class="font-18 max-width-600">{{ desc }}</p>
-            </div>
+    <div class="main__profile">
+        <div class="profile__img">
+            <img src="../assets/img/photo1.jpg">
+        </div>
+        <div class="profile__content">
+            <div class="profile__title">Johnny Brown!</div>
+            <div class="profile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde hic non
+                repellendus debitis iure, doloremque assumenda. Autem modi, corrupti, nobis ea iure fugiat,
+                veniam non quaerat mollitia animi error corporis.</div>
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        name: "Profile",
-        props: {
-            image: {
-                type: String,
-                default: ''
-            },
-            fullname: {
-                type: String,
-                default: ''
-            },
-            desc: {
-                type: String,
-                default: ''
-            }
+export default {
+    name: "Profile",
+    props: {
+        modelValue: {
+            type: Boolean,
+            default: false
+        },
+        title: {
+            type: String,
+            default: ''
+        },
+        desc: {
+            type: String,
+            default: ''
         }
-    }
+    },
+    emits: ['update:modelValue']
+}
 </script>
